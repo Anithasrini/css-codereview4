@@ -1,10 +1,119 @@
-.heading {
-    color: white;
-    width: 100%;
-    height: 200px;
-    margin-top: 160px;
-    // margin-right: 280px
+.logo {
+  position: absolute;
+  // font-size: 5px;
+  width: 240px;
+  height: 50px;
+  // z-index: 100;
 }
-.heading, img h4, h1 {
-  align-self: center;
+.logo img {
+  width: 30px;
+  height: 30px;
+  display: block;
+  // vertical-align: top;
+
+}
+.logo, img h4 {
+  margin-top: 35px;
+  padding: 0;
+  margin-left: 8px;
+  letter-spacing: 1px;
+}
+.logo h4 {
+  margin-top: 10px;
+  font-size: 4px;
+  margin-left: -12px;
+}
+.navigation {
+  height: 100%;
+  visibility: hidden;
+  z-index: 120;
+  top: 0px;
+  display: block;
+  width: 250px;
+  right: -250px;
+
+}
+
+.navigation ul, a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-right: 10px;
+  top: 10px;
+}
+.navigation li, a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 1px;
+  margin-left: 10px;
+
+}
+
+.menu a {
+  display: block;
+  margin-top: -10px;
+  margin-left: 50px;
+  width: 120px;
+  font-size: 25px;
+  position: absolute;
+}
+.heading button {
+  display: none;
+}
+// .heading button {
+//    display: inline-block;
+//    line-height: 60px;
+//    padding: 0px 30px;
+//    background: #dc7725;
+//    font-size: 18px;
+//    color: #ffffff;
+//    text-align: center;
+//    height: 100%;
+//    width: 280px;
+//    margin-left: 600px;
+//    margin-top: 1900px;
+// }
+// button {
+//   margin-top: 1100px;
+//   // position: absolute;
+// }
+.heading {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  // width: 240px;
+  // height: 50px;
+}
+.heading img {
+  margin-left: 110px;
+  position: absolute;
+  max-width: 100%;
+  margin-top: 90px;
+}
+
+.heading h2,  span {
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    margin-top: 80px;
+    font-weight: bold;
+    // position: absolute;
+}
+.heading h2 {
+  margin-top: 40px;
+  font-size: 55px;
+  letter-spacing: 2px;
+  // line-height: -80px;
+
+}
+.heading-line {
+  margin: 25px auto;
+  background: #ffffff;
+  width: 250px;
+  height: 5px;
+  margin: 25px 35px 25px 35px;
 }
