@@ -1,128 +1,107 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #646461;
+  overflow-y: scroll;
+  overflow-x: hidden; }
 
 .container {
-  height: 100%;
-  max-width: 100%;
-  color: #646461; }
-
-*, *:before, *:after {
-  content: ""; }
-
-.top-bar {
+  justify-content: space-between;
   background: url("../img/main-1.jpg") top center;
-  height: 500px;
-  width: 340px;
+  height: 100vh;
+  max-width: 100%;
   background-size: cover;
   margin: 0;
   position: relative;
-  background-repeat: no-repeat;
-  color: white; }
-
-.secondary-nav {
-  display: none; }
-
-.secondary-nav {
-  width: 100%;
-  position: absolute;
-  text-align: center;
-  background: #343433;
-  justify-content: space-between; }
-
-.secondary-nav li {
-  font-size: 12px;
-  margin-top: 20px;
-  list-style: none;
-  text-decoration: none;
-  color: #bdbdb7; }
-
-.secondary-nav li:nth-child(4) {
-  border-right: 2px solid #bdbdb7;
-  height: 50px;
-  margin-top: 20px; }
-
-.more {
-  color: orange; }
-
-hr {
-  border: 1px solid red; }
-
-.top-bar {
-  justify-content: space-between; }
-
-.top-bar {
-  height: 500px;
-  width: 320px; }
-
-.logo, .navigation {
-  flex-direction: row;
-  margin-top: 40px; }
-
-.logo {
-  flex-direction: row;
-  z-index: 100;
-  justify-content: space-between; }
-
-.navigation li {
-  align-items: flex-start;
-  justify-content: space-between; }
-
-.heading {
-  flex-direction: column; }
-
-.heading img {
-  margin-top: 30px;
-  align-self: center;
-  margin-left: 20px;
-  width: 60px; }
-
-.heading h2 {
-  align-self: center; }
-
-.heading img, h2, span {
-  line-height: 10px;
-  flex-direction: column;
-  align-items: center;
-  padding: 0; }
-
-.secondary-nav {
-  display: none; }
+  background-repeat: no-repeat; }
 
 .main {
-  flex-direction: column;
-  margin: 0;
-  background: #343433;
-  width: 100%;
-  height: 100%;
-  padding-top: 80px; }
-
-.sub-main img {
-  flex-direction: column;
-  height: 250px;
-  width: 288px;
-  border-radius: 3px;
-  clear: both;
-  margin: 20px;
-  background-position: center;
-  position: relative;
-  overflow: hidden;
-  margin: 16px; }
-
-.main {
-  height: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-  position: relative; }
+  height: 50vh;
+  width: 100%; }
 
-.sub-main a {
-  height: 250px;
-  margin: 20px;
-  padding: 20px;
-  border: 0; }
+.sub-main1 {
+  width: 100%; }
+
+.trip-1 {
+  flex-grow: 2;
+  background-image: url("../img/rafting-trips.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  margin: 0;
+  border: 1px solid red; }
+
+.trip-2 {
+  flex-grow: 1;
+  height: 50vh;
+  background-image: url("../img/basecamp-trips.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  border: 1px solid green; }
+
+.trip-3 {
+  flex-grow: 1;
+  height: 50vh;
+  margin: 0;
+  background-image: url("../img/backpacking-trips.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.sub-main2 {
+  width: 100%; }
+
+.trip-4 {
+  margin: 0;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../img/canoe-trips.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-grow: 1;
+  background-repeat: no-repeat; }
+
+.trip-5 {
+  flex-grow: 1;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../img/photography-trips.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; }
+
+.trip-6 {
+  flex-grow: 2;
+  height: 50vh;
+  width: 100%;
+  background-image: url("../img/custom-trips.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0; }
+
+.landing-wrapper {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid green; }
+
+.nav-bar {
+  height: 15vh;
+  justify-content: space-between;
+  border: 1px solid red; }
 
 .logo {
   position: absolute;
@@ -130,44 +109,44 @@ hr {
   height: 50px; }
 
 .logo img {
-  width: 30px;
-  height: 30px;
-  display: block; }
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin-top: 86px;
+  margin-left: 20px; }
 
 .logo, img h4 {
-  margin-top: 35px;
+  margin-top: -10px;
   padding: 0;
-  margin-left: 8px;
+  margin-left: 20px;
   letter-spacing: 1px; }
 
 .logo h4 {
-  margin-top: 10px;
-  font-size: 4px;
-  margin-left: -12px; }
+  margin-top: 100px;
+  font-size: 1.4rem;
+  margin-left: 5px; }
 
 .navigation {
   height: 100%;
-  visibility: hidden;
-  z-index: 120;
-  top: 0px;
-  display: block;
-  width: 250px;
-  right: -250px; }
+  max-width: 100%;
+  position: absolute;
+  margin: auto;
+  top: 90px; }
 
-.navigation ul, a {
+.navigation ul, li {
+  display: inline-flex;
   list-style: none;
   text-decoration: none;
   color: white;
-  font-size: 18px;
-  margin-right: 10px;
-  top: 10px; }
+  font-size: 15px;
+  margin-right: 10px; }
 
 .navigation li, a {
   list-style: none;
   text-decoration: none;
   color: white;
-  letter-spacing: 1px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  letter-spacing: 1px; }
 
 .menu a {
   display: block;
@@ -175,44 +154,40 @@ hr {
   margin-left: 50px;
   width: 120px;
   font-size: 25px;
-  position: absolute; }
+  position: absolute;
+  display: none; }
 
-.heading button {
+button {
+  width: 200px;
+  border-radius: .5em;
   display: none; }
 
 .heading {
-  display: flex;
-  justify-content: space-around;
-  text-align: center; }
+  border: 5px solid blue;
+  height: 200px;
+  width: 300px; }
 
 .heading img {
-  margin-left: 110px;
+  align-self: center;
   position: absolute;
-  max-width: 100%;
-  margin-top: 90px; }
+  width: 80px; }
 
 .heading h2, span {
   color: white;
+  align-self: center;
   text-align: center;
   font-size: 10px;
   line-height: 45px;
-  letter-spacing: 3px;
-  margin-top: 80px;
-  font-weight: bold; }
+  letter-spacing: 2px;
+  font-weight: bold;
+  position: absolute; }
 
-.heading h2 {
-  margin-top: 40px;
-  font-size: 55px;
-  letter-spacing: 2px; }
+.heading img, h2, span {
+  line-height: 10px;
+  align-items: center;
+  padding: 0; }
 
-.heading-line {
-  margin: 25px auto;
-  background: #ffffff;
-  width: 250px;
-  height: 5px;
-  margin: 25px 35px 25px 35px; }
-
-.top-bar, .logo, .navigation, .navigation li, .heading, .heading img, h2, span, .main {
+.container, .sub-main1, .trip-1, .trip-2, .trip-3, .sub-main2, .trip-4, .trip-5, .trip-6, .landing-wrapper, .nav-bar, .logo, img h4, .navigation, .navigation ul, li, .heading, .heading h2, span {
   display: flex; }
 
 /*# sourceMappingURL=application.css.map */
