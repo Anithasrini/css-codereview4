@@ -162,10 +162,15 @@ button {
   border-radius: .5em;
   display: none; }
 
+.landing-wrapper {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  position: absolute; }
+
 .heading {
-  border: 5px solid blue;
-  height: 200px;
-  width: 300px; }
+  height: 600px;
+  width: 100%; }
 
 .heading img {
   align-self: center;
@@ -176,18 +181,19 @@ button {
   color: white;
   align-self: center;
   text-align: center;
-  font-size: 10px;
-  line-height: 45px;
-  letter-spacing: 2px;
+  margin: 0 40%;
+  font-size: 15px;
+  letter-spacing: 3px;
   font-weight: bold;
   position: absolute; }
 
-.heading img, h2, span {
-  line-height: 10px;
-  align-items: center;
-  padding: 0; }
+.heading h2 {
+  align-self: center;
+  font-size: 8rem;
+  letter-spacing: 2px;
+  line-height: -130px; }
 
-.container, .sub-main1, .trip-1, .trip-2, .trip-3, .sub-main2, .trip-4, .trip-5, .trip-6, .landing-wrapper, .nav-bar, .logo, img h4, .navigation, .navigation ul, li, .heading, .heading h2, span {
+.container, .sub-main1, .trip-1, .trip-2, .trip-3, .sub-main2, .trip-4, .trip-5, .trip-6, .landing-wrapper, .nav-bar, .logo, img h4, .navigation, .navigation ul, li, .heading h2, span {
   display: flex; }
 
 /*# sourceMappingURL=application.css.map */
