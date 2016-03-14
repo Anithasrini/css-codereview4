@@ -1,144 +1,131 @@
 
 .nav-bar{
   @extend %flex;
-  height: 15vh;
+  width: 100%;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
   justify-content: space-between;
-  border: 1px solid red;
+  align-items: center;
+  flex: 1;
+  margin-left: 10px;
+  margin-top: 45px;
+
 }
 .logo {
-  // @extend %flex;
-  position: absolute;
-  width: 240px;
-  height: 50px;
+  @extend %flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+
 }
 .logo img {
+  @extend %flex;
   width: 40px;
   height: 40px;
-  display: block;
-  margin-top: 86px;
-  margin-left: 20px;
+  }
+  h4 {
+  font-size: 2rem;
 }
-.logo, img h4 {
-  @extend %flex;
-  // align-items: flex-start;
-  margin-top: -10px;
-  padding: 0;
-  margin-left: 20px;
-  letter-spacing: 1px;
-}
-.logo h4 {
-  margin-top: 100px;
-  font-size: 1.4rem;
-  margin-left: 5px;
-}
+
 .navigation {
   @extend %flex;
-  height: 100%;
-  max-width: 100%;
-  position: absolute;
-  margin: auto;
-  top: 90px;
+  flex: 1;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation ul, li {
   @extend %flex;
-  display: inline-flex;
-  list-style: none;
-  text-decoration: none;
+  justify-content: space-around;
   color: white;
-  font-size: 15px;
-  margin-right: 10px;
+  font-size: 1em;
 }
 .navigation li, a {
+  @extend %flex;
+  align-items: center;
   list-style: none;
   text-decoration: none;
   color: white;
   margin-left: 10px;
   letter-spacing: 1px;
+}
+
+.heading button {
+   margin-top: 30px;
+   padding: 10px;
+   background: #dc7725;
+   font-size: 12px;
+   color: #ffffff;
+   text-align: center;
+   border-radius: 3px;
 
 }
-.menu a {
-  display: block;
-  margin-top: -10px;
-  margin-left: 50px;
-  width: 120px;
-  font-size: 25px;
-  position: absolute;
-  display: none;
-}
-//
-// .heading-line {
-//   position: absolute;
-//   margin: 25px auto;
-//   background: #ffffff;
-//   width: 150px;
-//   height: 5px;
-//   display: none;
-// }
-//
-// .heading button {
-//    display: inline-block;
-//    position: absolute;
-//    line-height: 60px;
-//    padding: 0px 30px;
-//    background: #dc7725;
-//    font-size: 18px;
-//    color: #ffffff;
-//    text-align: center;
-//    width: 200px;
-//    margin-left: 600px;
-//    margin-top: 1900px;
-//     //  border: 1px solid red;
-// }
-button {
-  width: 200px;
-  border-radius: .5em;
-  display: none;
-}
+
 .landing-wrapper {
-  @extend %flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  position: absolute;
-  // margin: 0 50%;
+   @extend %flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
 }
-
 .heading {
-  // flex-direction: column;
-  height: 600px;
-  width: 100%;
-}
-.heading img {
-  align-self: center;
-  position: absolute;
-  width: 80px;
-  // margin-top: 180px;
-}
-
-.heading h2, span {
     @extend %flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     color: white;
-    align-self: center;
-    text-align: center;
-    margin: 0 40%;
-    font-size: 15px;
-    // line-height: 45px;
-    letter-spacing: 3px;
-    font-weight: bold;
-    position: absolute;
-}
-.heading h2 {
-  align-self: center;
-  font-size: 8rem;
-  letter-spacing: 2px;
-  line-height: -130px;
-  //  margin: 0 20px 0 10px;
+    margin-left: auto;
+    margin-top: 5%;
+    margin: 0;
+    padding: 0;
 
 }
-//
-// .heading img, h2, span {
-//   line-height: 10px;
-//   align-items: center;
-//   padding: 0;
-// }
+  .headh {
+    font-size: 6em;
+    line-height: 0px;
+    border-bottom: 3px solid white;
+
+  }
+  .headp {
+    align-self: center;
+    line-height: 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px black;
+
+  }
+  .menu a {
+    margin-left: 300px;
+    font-size: 3em;
+    position: absolute;
+    margin-top: -17px;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1035px) {
+  .nav-bar {
+  display: flex;
+  margin-left: 3px;
+  }
+  .navigation {
+    font-size: 1.5em;
+  }
+
+}
+@media screen and (max-width: 1034px) {
+  .navigation {
+    margin-left: -55px;
+    font-size: .6em;
+  }
+ .canoe, .photo, .custom {
+   bottom: -800px;
+ }
+
+}

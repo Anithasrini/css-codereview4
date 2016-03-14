@@ -1,3 +1,67 @@
 %flex {
   display: flex;
 }
+
+%icon-r2 {
+flex-direction: column;
+position: absolute;
+ bottom: -620px;
+ justify-content: space-around;
+ }
+
+%icon-r1 {
+  flex-direction: column;
+  position: absolute;
+  bottom: -300px;
+  justify-content: space-around;
+}
+
+%icon {
+background-color: grey;
+background-color: rgba(0, 0, 0, 0.5);
+ border-radius: 100%;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ z-index: 1;
+ align-items: center;
+ justify-content: center;
+ }
+
+%icon-p {
+  position: absolute;
+  margin-left: -10px;
+  color: white;
+  font-size: 6px;
+  margin-top: 10%;
+  width: 100%;
+}
+
+
+%hover {
+transition: 0.3s ease-in-out;
+transform: scale(1.5);
+box-shadow: 2px 2px 5px black;
+cursor: pointer;
+font-size: 4px;
+}
+
+
+%trip-image {
+flex: 1;
+margin: 0;
+padding: 0;
+width:100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+%sub-main {
+flex-direction: row;
+flex-wrap: nowrap;
+height: 50vh;
+width: 100%;
+margin: 0;
+padding: 0;
+border: none;
+}

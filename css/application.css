@@ -18,182 +18,251 @@ html, body {
   justify-content: space-between;
   background: url("../img/main-1.jpg") top center;
   height: 100vh;
-  max-width: 100%;
+  width: auto;
   background-size: cover;
   margin: 0;
+  padding: 0;
+  flex-direction: column;
   position: relative;
   background-repeat: no-repeat; }
 
-.main {
+.secondary-nav {
+  justify-content: space-between;
+  position: relative;
+  background: #343433;
+  width: 100%;
+  height: 10vh;
   margin: 0;
   padding: 0;
-  height: 50vh;
-  width: 100%; }
+  flex-direction: row; }
 
-.sub-main1 {
-  width: 100%; }
+.nav1 {
+  margin: 0;
+  padding: 0; }
+
+.nav1 ul, li {
+  flex-wrap: wrap;
+  font-size: .6em;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #bdbdb7; }
+
+.nav1 span {
+  border-left: 2px solid #bdbdb7;
+  padding: 15px;
+  color: orange;
+  font-size: 1em; }
+
+.search {
+  margin-left: auto;
+  margin-right: 1em; }
+
+.main {
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  height: 100%; }
 
 .trip-1 {
   flex-grow: 2;
-  background-image: url("../img/rafting-trips.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 50vh;
-  margin: 0;
-  border: 1px solid red; }
+  background-image: url("../img/rafting-trips.jpg"); }
 
 .trip-2 {
-  flex-grow: 1;
-  height: 50vh;
-  background-image: url("../img/basecamp-trips.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  border: 1px solid green; }
+  background-image: url("../img/basecamp-trips.jpg"); }
 
 .trip-3 {
-  flex-grow: 1;
-  height: 50vh;
-  margin: 0;
-  background-image: url("../img/backpacking-trips.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-.sub-main2 {
-  width: 100%; }
+  background-image: url("../img/backpacking-trips.jpg"); }
 
 .trip-4 {
-  margin: 0;
-  height: 50vh;
-  width: 100%;
-  background-image: url("../img/canoe-trips.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  flex-grow: 1;
-  background-repeat: no-repeat; }
+  background-image: url("../img/canoe-trips.jpg"); }
 
 .trip-5 {
-  flex-grow: 1;
-  height: 50vh;
-  width: 100%;
-  background-image: url("../img/photography-trips.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0; }
+  background-image: url("../img/photography-trips.jpg"); }
 
 .trip-6 {
   flex-grow: 2;
-  height: 50vh;
-  width: 100%;
-  background-image: url("../img/custom-trips.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 0;
-  padding: 0; }
+  background-image: url("../img/custom-trips.jpg"); }
 
-.landing-wrapper {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  border: 5px solid green; }
+.rafting {
+  left: 12%; }
+
+.base-camp {
+  left: 50%; }
+
+.backpack {
+  left: 81%; }
+
+.canoe {
+  left: 10%; }
+
+.photo {
+  left: 50%; }
+
+.custom {
+  left: 82%; }
 
 .nav-bar {
-  height: 15vh;
+  width: 100%;
+  height: 30vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
   justify-content: space-between;
-  border: 1px solid red; }
+  align-items: center;
+  flex: 1;
+  margin-left: 10px;
+  margin-top: 45px; }
 
 .logo {
-  position: absolute;
-  width: 240px;
-  height: 50px; }
+  justify-content: center;
+  align-items: center;
+  width: 100%; }
 
 .logo img {
   width: 40px;
-  height: 40px;
-  display: block;
-  margin-top: 86px;
-  margin-left: 20px; }
+  height: 40px; }
 
-.logo, img h4 {
-  margin-top: -10px;
-  padding: 0;
-  margin-left: 20px;
-  letter-spacing: 1px; }
-
-.logo h4 {
-  margin-top: 100px;
-  font-size: 1.4rem;
-  margin-left: 5px; }
+h4 {
+  font-size: 2rem; }
 
 .navigation {
-  height: 100%;
-  max-width: 100%;
-  position: absolute;
-  margin: auto;
-  top: 90px; }
+  flex: 1;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center; }
 
 .navigation ul, li {
-  display: inline-flex;
-  list-style: none;
-  text-decoration: none;
+  justify-content: space-around;
   color: white;
-  font-size: 15px;
-  margin-right: 10px; }
+  font-size: 1em; }
 
 .navigation li, a {
+  align-items: center;
   list-style: none;
   text-decoration: none;
   color: white;
   margin-left: 10px;
   letter-spacing: 1px; }
 
-.menu a {
-  display: block;
-  margin-top: -10px;
-  margin-left: 50px;
-  width: 120px;
-  font-size: 25px;
-  position: absolute;
-  display: none; }
-
-button {
-  width: 200px;
-  border-radius: .5em;
-  display: none; }
+.heading button {
+  margin-top: 30px;
+  padding: 10px;
+  background: #dc7725;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px; }
 
 .landing-wrapper {
   justify-content: center;
-  align-items: center;
-  align-self: center;
-  position: absolute; }
-
-.heading {
-  height: 600px;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
   width: 100%; }
 
-.heading img {
-  align-self: center;
-  position: absolute;
-  width: 80px; }
-
-.heading h2, span {
+.heading {
+  width: auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: white;
-  align-self: center;
-  text-align: center;
-  margin: 0 40%;
-  font-size: 15px;
-  letter-spacing: 3px;
-  font-weight: bold;
-  position: absolute; }
+  margin-left: auto;
+  margin-top: 5%;
+  margin: 0;
+  padding: 0; }
 
-.heading h2 {
-  align-self: center;
-  font-size: 8rem;
-  letter-spacing: 2px;
-  line-height: -130px; }
+.headh {
+  font-size: 6em;
+  line-height: 0px;
+  border-bottom: 3px solid white; }
 
-.container, .sub-main1, .trip-1, .trip-2, .trip-3, .sub-main2, .trip-4, .trip-5, .trip-6, .landing-wrapper, .nav-bar, .logo, img h4, .navigation, .navigation ul, li, .heading h2, span {
+.headp {
+  align-self: center;
+  line-height: 0;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px black; }
+
+.menu a {
+  margin-left: 300px;
+  font-size: 3em;
+  position: absolute;
+  margin-top: -17px;
+  visibility: hidden; }
+
+@media screen and (max-width: 1035px) {
+  .nav-bar {
+    display: flex;
+    margin-left: 3px; }
+
+  .navigation {
+    font-size: 1.5em; } }
+@media screen and (max-width: 1034px) {
+  .navigation {
+    margin-left: -55px;
+    font-size: .6em; }
+
+  .canoe, .photo, .custom {
+    bottom: -800px; } }
+.container, .secondary-nav, .nav1, .nav1 ul, li, .main, .sub-main1, .sub-main2, .rafting, .base-camp, .backpack, .canoe, .photo, .custom, .nav-bar, .logo, .logo img, .navigation, .navigation ul, .navigation li, a, .landing-wrapper, .heading {
   display: flex; }
+
+.canoe, .photo, .custom {
+  flex-direction: column;
+  position: absolute;
+  bottom: -620px;
+  justify-content: space-around; }
+
+.rafting, .base-camp, .backpack {
+  flex-direction: column;
+  position: absolute;
+  bottom: -300px;
+  justify-content: space-around; }
+
+.icon1, .icon2, .icon3, .icon4, .icon5, .icon6 {
+  background-color: grey;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  align-items: center;
+  justify-content: center; }
+
+.icon-p, .icon-p2, .icon-p3, .icon-p4, .icon-p5, .icon-p6 {
+  position: absolute;
+  margin-left: -10px;
+  color: white;
+  font-size: 6px;
+  margin-top: 10%;
+  width: 100%; }
+
+.icon1:hover, .icon2:hover, .icon3:hover, .icon4:hover, .icon5:hover, .icon6:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.5);
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+  font-size: 4px; }
+
+.trip-1, .trip-2, .trip-3, .trip-4, .trip-5, .trip-6 {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.sub-main1, .sub-main2 {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 50vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none; }
 
 /*# sourceMappingURL=application.css.map */
